@@ -3,11 +3,11 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>v86-自由开源模拟器</title>
+        <title>v86 - 自由でオープンソースのシミュレーター</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
+        <!-- favicon.ico と apple-touch-icon(s) をルートディレクトリに置いてください -->
 
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
@@ -15,31 +15,31 @@
     </head>
     <body>
         <!--[if lt IE 8]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+            <p class="browsehappy">お使いのブラウザは <strong>古い</strong> バージョンです。<a href="http://browsehappy.com/">ブラウザをアップグレード</a>して、より良い体験をしてください。</p>
         <![endif]-->
 		
 		<input type="text" class="phone_keyboard" style="display: none">
 		
-        <!-- popup页面 -->
+        <!-- ポップアップ画面 -->
         <div id="screen_popup"></div>
 		<div id="popup_dialog_container">
         	<div id="popup_dialog">
         		<div id="popup_close">
         			<div id="popup_close_cover" onclick="onPopupCloseClick()"></div>
-        			<embed id="popup_close_icon" src="img/cross.svg"  type="image/svg+xml"	pluginspage="http://www.adobe.com/svg/viewer/install/" />	
+        			<embed id="popup_close_icon" src="img/cross.svg"  type="image/svg+xml" pluginspage="http://www.adobe.com/svg/viewer/install/" />	
 				</div>
 				<div id="popup_text_container"><div id="popup_text" class="allowSelect"></div></div>		
         	</div>
         </div>
         
-        <!-- toast 页面 -->
+        <!-- トースト通知 -->
         <div id="toast_container">
         	<div id="toast_color_bar"></div>
         	<div id="toast_main"></div>
         </div>
 
         
-        <!-- 第一面屏幕，欢迎界面 -->
+        <!-- 初めの画面、ウェルカム画面 -->
       	<div id="screen1">
       		<div id="screen1_container">
 	      			<div id="screen1_cover"></div>
@@ -47,7 +47,7 @@
 		      		<div id="screen1_icon_container">
 		      			<div id="screen1_icon_background" >
 		      				
-		      					<embed src="img/computer2-06.svg" height="80" width="80" type="image/svg+xml"	pluginspage="http://www.adobe.com/svg/viewer/install/" />
+		      					<embed src="img/computer2-06.svg" height="80" width="80" type="image/svg+xml" pluginspage="http://www.adobe.com/svg/viewer/install/" />
 		      				
 						</div>
 						<div id="screen1_icon_title"><img src="img/screen1_icon_title.png" height="80px"/></div>
@@ -56,12 +56,12 @@
 		      		
 		      		<div id="screen1_main">
 		      			<div id="screen1_main_text_container" >
-		      				<div id="screen1_main_text">Virtual x86,一款在线x86硬件平台模拟器，基于HTML5，JavaScript等多种技术，可在瞬间模拟PC平台，兼容Windows、Linux、DOS、OpenBSD等多种操作系统，为您提供优质的模拟体验。本模拟器小巧方便，简单实用，永久免费开源。</div>
+		      				<div id="screen1_main_text">Virtual x86は、HTML5、JavaScriptなどの技術を基にしたオンラインx86ハードウェアプラットフォームシミュレーターです。瞬時にPCプラットフォームをシミュレーションし、Windows、Linux、DOS、OpenBSDなどの多くのオペレーティングシステムをサポートし、高品質なシミュレーション体験を提供します。このシミュレーターは小型で便利、シンプルで実用的、無料でオープンソースです。</div>
 		      				
 		      				<div id="screen1_main_button">
-		      					点此开始体验 &nbsp; &nbsp;&nbsp;
+		      					ここをクリックして体験を開始 &nbsp; &nbsp;&nbsp;
 		      					
-	      						<embed id="screen1_main_button_icon" src="img/arrowhead.svg" height="20" width="20" type="image/svg+xml"	pluginspage="http://www.adobe.com/svg/viewer/install/" />
+	      						<embed id="screen1_main_button_icon" src="img/arrowhead.svg" height="20" width="20" type="image/svg+xml" pluginspage="http://www.adobe.com/svg/viewer/install/" />
 		      					
 							</div>
 		      				<div class="clearfix"></div>
@@ -71,17 +71,17 @@
       	</div>
         
         
-        <!-- 第二面屏幕 -->
+        <!-- 第二画面 -->
         <div id="screen2">
         	<div id="screen2_navigation">
 	      		<div id="screen2_icon_container">
-	      			<embed src="img/computer2-06-big.svg" height="60" width="60" type="image/svg+xml"	pluginspage="http://www.adobe.com/svg/viewer/install/" />
+	      			<embed src="img/computer2-06-big.svg" height="60" width="60" type="image/svg+xml" pluginspage="http://www.adobe.com/svg/viewer/install/" />
 	      			<div id="screen2_title">Virtual x86</div>		
 	      		</div>
-	      		<div id="screen2_nav_about" class="screen2_nav">关于</div>
-	      		<div id="screen2_nav_help" class="screen2_nav"><a href="help.pdf" class="screen2_nav_a">帮助</a></div>
-	      		<div id="screen2_nav_fullScreen" class="screen2_nav">全屏</div>	
-	      		<div id="screen2_nav_home" class="screen2_nav">首页</div>		
+	      		<div id="screen2_nav_about" class="screen2_nav">About</div>
+	      		<div id="screen2_nav_help" class="screen2_nav"><a href="help.pdf" class="screen2_nav_a">ヘルプ</a></div>
+	      		<div id="screen2_nav_fullScreen" class="screen2_nav">全画面</div>	
+	      		<div id="screen2_nav_home" class="screen2_nav">ホーム</div>		
 	      	</div>
 	      	
 	      	<div id="screen2_container">
@@ -89,16 +89,16 @@
 	      		<div id="screen2_main_container">
 	      			<div class="menu_height"></div>
 	      			<div id="screen2_main_title">
-	      				Virtual x86<div class="subtitle">不只是一个模拟器</div>
+	      				Virtual x86<div class="subtitle">単なるシミュレーターではありません</div>
 	      			</div>
 	      			<div id="screen2_main_line"></div>
 	      			<div id="screen2_main_left">
 	      				<div id="screen2_main_left_continer">
 	      					<div id="screen2_main_left_click_container">
 		      					<div id="screen2_main_left_cover"></div>
-		      					<embed src="img/quickstart.svg" height="120" width="120" type="image/svg+xml"	pluginspage="http://www.adobe.com/svg/viewer/install/" />	
-		      					<div class="subtitle">快速启动</div>
-		      					<div class="screen2_info">能够让您方便快速的启动已经预定义好的虚拟机。这些虚拟机包含Linux、nonoLinux、DOS、Windows 1.0等操作系统。方便快捷、一键启动，适合不需要定制功能的使用者。</div>
+		      					<embed src="img/quickstart.svg" height="120" width="120" type="image/svg+xml" pluginspage="http://www.adobe.com/svg/viewer/install/" />	
+		      					<div class="subtitle">クイックスタート</div>
+		      					<div class="screen2_info">予め定義された仮想マシンを簡単に迅速に起動できます。これらの仮想マシンには、Linux、nonoLinux、DOS、Windows 1.0 などのオペレーティングシステムが含まれています。便利で迅速、一括起動が可能で、カスタマイズ機能が不要なユーザーに適しています。</div>
 	      					</div>      					
 	      				</div>
 	      			</div>
@@ -107,15 +107,15 @@
 	      				<div id="screen2_main_right_container">
 	      					<div id="screen2_main__click_container">
 		      					<div id="screen2_main_right_cover"></div>
-		      					<embed src="img/custum.svg" height="120" width="120" type="image/svg+xml"	pluginspage="http://www.adobe.com/svg/viewer/install/" />
-		      					<div class="subtitle">自定义启动</div>
-		      					<div class="screen2_info_">用来启动您自己定义的虚拟机。您可以自己定制光盘镜像、软盘镜像、硬盘镜像、内存大小、显存大小等启动关键参数。适合进阶玩家使用</div>
+		      					<embed src="img/custum.svg" height="120" width="120" type="image/svg+xml" pluginspage="http://www.adobe.com/svg/viewer/install/" />
+		      					<div class="subtitle">カスタムスタート</div>
+		      					<div class="screen2_info_">自分で定義した仮想マシンを起動します。光盤イメージ、フロッピーディスクイメージ、ハードディスクイメージ、メモリサイズ、ビデオメモリサイズなど、起動に必要なパラメータをカスタマイズできます。上級者に適しています。</div>
 	      					</div>   
 	      				</div>      				
 	      			</div>
 	      		</div>
 	      		<div id="screen2_quickstart_container">
-	      			<!-- 快速启动界面 -->
+	      			<!-- クイックスタート画面 -->
 	      			<div class="menu_height"></div>
 	      			<div id="screen2_quickstart_vm">
 	      				<div id="QuickStartScreen">
@@ -132,51 +132,47 @@
 	      				<div class="screen2_panel desp" id="Select_KolibriOS">KolibriOS</div>
 	      			</div>
 	      			<div id="screen2_quickstart_control" class="control" style="display: none">
-	      				<div class="screen2_panel" id="QuickStart_Pause">暂停</div>
-	      				<div class="screen2_panel" id="QuickStart_Hide">隐藏鼠标</div>
-	      				<div class="screen2_panel" onclick="location.reload()">复位</div>
+	      				<div class="screen2_panel" id="QuickStart_Pause">一時停止</div>
+	      				<div class="screen2_panel" id="QuickStart_Hide">マウスを隠す</div>
+	      				<div class="screen2_panel" onclick="location.reload()">リセット</div>
 	      			</div>
 	      		</div>
-	      		<div id="screen2_costumstart_container">
-	      			<!-- 自定义启动界面 -->
-	      			<div class="menu_height"></div>
-	      			<div id="screen2_custumstart_vm">
-	      				<div id="CustomStartScreen">
-						    <div style="white-space: pre; font: 14px 'Courier New'"></div>
-						    <canvas style="display: none;height: 100%;width: 100%;"></canvas>
-						</div>
-	      			</div>
-	      			<div id="screen2_custom_panel">
-	      				<div class="screen2_custom_panel_item">光盘镜像地址：<input class="screen2_panel_input" id="CustumCDUrl"/></div>
-	      				<div class="screen2_custom_panel_item">软盘镜像地址：<input class="screen2_panel_input" id="CustumFDDUrl" /></div>
-	      				<div class="screen2_custom_panel_item">硬盘镜像地址：<input class="screen2_panel_input" id="CustumHDUrl" /></div>
-	      				<div class="screen2_custom_panel_item">内存大小(MB)：<input class="screen2_panel_input" id="CustumMemory" maxLength="10"  onKeypress="if (event.keyCode < 48 || event.keyCode > 57) event.returnValue = false;" value="64"/></div>
-	      				<div class="screen2_custom_panel_item">显存大小(MB)：<input class="screen2_panel_input" id="CustomVideoMemory" maxLength="10"  onKeypress="if (event.keyCode < 48 || event.keyCode > 57) event.returnValue = false;" value="8"/></div>
-	      				<div id="CustumVMRun" class="screen2_panel" >运行！</div>
-	      				<div class="screen2_panel" id="CustomStart_Hide" style="margin-left: auto;margin-right: auto;display:none;">隐藏鼠标</div>
-	      				<div class="screen2_panel" style="margin-left: auto;margin-right: auto;" onclick="location.reload()">复位</div>
-	      			</div>
-	      		</div>
-	      	</div>
+	      	</div>			
         </div>
         
-        <!-- 版权信息  -->
-        <div id="copyright">&copy; 未来道具研究所 2014 . All rights reserved.</div>
-		
-		
-
-
-		
-		<!-- 文档结束的地方加载js -->
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-2.1.1.min.js"><\/script>');</script>
-        <script src="js/plugins.js"></script>
-        <script src="js/Modernizr.js"></script>
-        <script src="js/browser/keyboard.js"></script>
-        <script src="js/browser/mouse.js"></script>
-        <script src="js/browser/screen.js"></script>
-        <script src="js/libv86.js"></script>
-        <script src="js/main.js"></script>
+        <!-- 第三画面 -->
+        <div id="screen3">
+	        <div id="screen3_icon_container">
+	        	<embed src="img/computer2-06-big.svg" height="60" width="60" type="image/svg+xml" pluginspage="http://www.adobe.com/svg/viewer/install/" />
+	        	<div id="screen3_title">Virtual x86</div>	
+	        </div>
+	        <div id="screen3_content">
+	        	<div id="screen3_content_text">
+		        	<b>カスタムスタート:</b><br><br>
+		        	仮想マシンの起動には、以下のものが必要です。<br><br>
+		        	<b>起動イメージ:</b><br>
+		        	仮想マシンの起動に必要なイメージファイルです。<br><br>
+		        	<b>フロッピーディスクイメージ:</b><br>
+		        	フロッピーディスクイメージがある場合は指定します。<br><br>
+		        	<b>ハードディスクイメージ:</b><br>
+		        	ハードディスクイメージがある場合は指定します。<br><br>
+		        	<b>メモリサイズ:</b><br>
+		        	仮想マシンに割り当てるメモリサイズです。<br><br>
+		        	<b>ビデオメモリサイズ:</b><br>
+		        	仮想マシンに割り当てるビデオメモリサイズです。<br><br>
+		        	<b>その他のパラメータ:</b><br>
+		        	その他の起動パラメータです。<br>
+		        </div>
+	        	<div id="screen3_options">
+	        		<b>設定:</b><br><br>
+	        		仮想マシンの設定を調整するオプションです。<br><br>
+	        		<b>カスタムイメージ:</b><br>
+	        		自分で用意したイメージを指定できます。<br><br>
+	        	</div>
+	        </div>
+        </div>
         
-
+        <script src="js/vendor/jquery-1.10.2.min.js"></script>
+        <script src="js/main.js"></script>
     </body>
 </html>
